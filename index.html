@@ -135,7 +135,12 @@
   .plaque .name{position:relative;font-family:'Aref Ruqaa',serif;font-size:19px;z-index:1;}
   .plaque .tag{position:relative;font-size:11.5px;letter-spacing:1.5px;opacity:.75;margin-top:8px;z-index:1;}
   .plaque .media-slots{position:relative;display:flex;gap:6px;margin-top:14px;z-index:1;}
-  .plaque .media-slots span{font-size:10px;border:1px solid rgba(251,243,224,.4);border-radius:20px;padding:3px 10px;opacity:.85;}
+  .plaque .media-slots a.media-link{
+    font-size:10px;border:1px solid rgba(251,243,224,.5);border-radius:20px;
+    padding:4px 12px;opacity:.9;text-decoration:none;color:#fbf3e0;
+    transition:.2s; cursor:pointer;
+  }
+  .plaque .media-slots a.media-link:hover{opacity:1;background:rgba(251,243,224,.18);border-color:#fbf3e0;}
   .p-house{background:linear-gradient(160deg,var(--terracotta),#7c3a22);}
   .p-bazaar{background:linear-gradient(160deg,var(--gold),#8a641f);}
   .p-mosque{background:linear-gradient(160deg,var(--turquoise),#0d4744);}
@@ -259,25 +264,25 @@
     <div class="grid reveal">
       <div class="card">
         <div class="plaque p-house"><div class="name">نارنجستان قوام</div><div class="tag">محله سنگ سیاه</div>
-          <div class="media-slots"><span>عکس</span><span>فیلم</span><span>سه‌بعدی</span></div></div>
+          <div class="media-slots"><a class="media-link" href="https://www.google.com/search?tbm=isch&q=Narenjestan-e%20Qavam%20Shiraz%20%D8%AE%D8%A7%D9%86%D9%87%20%D9%86%D8%A7%D8%B1%D9%86%D8%AC%D8%B3%D8%AA%D8%A7%D9%86%20%D9%82%D9%88%D8%A7%D9%85%20%D8%B4%DB%8C%D8%B1%D8%A7%D8%B2" target="_blank" rel="noopener">عکس</a><a class="media-link" href="https://www.youtube.com/results?search_query=Narenjestan-e%20Qavam%20Shiraz%20%D8%AE%D8%A7%D9%86%D9%87%20%D9%86%D8%A7%D8%B1%D9%86%D8%AC%D8%B3%D8%AA%D8%A7%D9%86%20%D9%82%D9%88%D8%A7%D9%85%20%D8%B4%DB%8C%D8%B1%D8%A7%D8%B2" target="_blank" rel="noopener">فیلم</a><a class="media-link" href="https://www.google.com/maps/search/Narenjestan-e%20Qavam%20Shiraz%20%D8%AE%D8%A7%D9%86%D9%87%20%D9%86%D8%A7%D8%B1%D9%86%D8%AC%D8%B3%D8%AA%D8%A7%D9%86%20%D9%82%D9%88%D8%A7%D9%85%20%D8%B4%DB%8C%D8%B1%D8%A7%D8%B2%203d" target="_blank" rel="noopener">سه‌بعدی</a></div></div>
         <div class="body"><h3>نارنجستان قوام</h3><div class="meta">دوره قاجار</div>
         <p>عمارتی از خاندان قوام‌الملک با نمای کاشی‌کاری هفت‌رنگ، ایوان ستون‌دار و باغ نارنجستانِ مرکزی؛ نمونه‌ای شاخص از معماری اعیانی شیراز.</p></div>
       </div>
       <div class="card">
         <div class="plaque p-house"><div class="name">خانه زینت‌الملک</div><div class="tag">محله سنگ سیاه</div>
-          <div class="media-slots"><span>عکس</span><span>فیلم</span><span>سه‌بعدی</span></div></div>
+          <div class="media-slots"><a class="media-link" href="https://www.google.com/search?tbm=isch&q=Zinat-ol-Molk%20House%20Shiraz%20%D8%AE%D8%A7%D9%86%D9%87%20%D8%B2%DB%8C%D9%86%D8%AA%20%D8%A7%D9%84%D9%85%D9%84%DA%A9%20%D8%B4%DB%8C%D8%B1%D8%A7%D8%B2" target="_blank" rel="noopener">عکس</a><a class="media-link" href="https://www.youtube.com/results?search_query=Zinat-ol-Molk%20House%20Shiraz%20%D8%AE%D8%A7%D9%86%D9%87%20%D8%B2%DB%8C%D9%86%D8%AA%20%D8%A7%D9%84%D9%85%D9%84%DA%A9%20%D8%B4%DB%8C%D8%B1%D8%A7%D8%B2" target="_blank" rel="noopener">فیلم</a><a class="media-link" href="https://www.google.com/maps/search/Zinat-ol-Molk%20House%20Shiraz%20%D8%AE%D8%A7%D9%86%D9%87%20%D8%B2%DB%8C%D9%86%D8%AA%20%D8%A7%D9%84%D9%85%D9%84%DA%A9%20%D8%B4%DB%8C%D8%B1%D8%A7%D8%B2%203d" target="_blank" rel="noopener">سه‌بعدی</a></div></div>
         <div class="body"><h3>خانه زینت‌الملک</h3><div class="meta">دوره قاجار</div>
         <p>بخشی از مجموعه قوام، با زیرزمین آینه‌کاری‌شده و طاق‌های گچ‌بری‌شده که امروز به موزه مردم‌شناسی اختصاص دارد.</p></div>
       </div>
       <div class="card">
         <div class="plaque p-house"><div class="name">خانه منطقی‌نژاد</div><div class="tag">بافت تاریخی</div>
-          <div class="media-slots"><span>عکس</span><span>فیلم</span></div></div>
+          <div class="media-slots"><a class="media-link" href="https://www.google.com/search?tbm=isch&q=Manteqi%20Nejad%20House%20Shiraz%20%D8%AE%D8%A7%D9%86%D9%87%20%D9%85%D9%86%D8%B7%D9%82%DB%8C%20%D9%86%DA%98%D8%A7%D8%AF%20%D8%B4%DB%8C%D8%B1%D8%A7%D8%B2" target="_blank" rel="noopener">عکس</a><a class="media-link" href="https://www.youtube.com/results?search_query=Manteqi%20Nejad%20House%20Shiraz%20%D8%AE%D8%A7%D9%86%D9%87%20%D9%85%D9%86%D8%B7%D9%82%DB%8C%20%D9%86%DA%98%D8%A7%D8%AF%20%D8%B4%DB%8C%D8%B1%D8%A7%D8%B2" target="_blank" rel="noopener">فیلم</a></div></div>
         <div class="body"><h3>خانه منطقی‌نژاد</h3><div class="meta">اواخر قاجار</div>
         <p>خانه‌ای سنتی با حیاط مرکزی، حوض و اتاق‌های تابستانی و زمستانی، نمونه‌ای از الگوی رایج خانه‌های شیراز قدیم.</p></div>
       </div>
       <div class="card">
         <div class="plaque p-house"><div class="name">خانه فروغی</div><div class="tag">بافت تاریخی</div>
-          <div class="media-slots"><span>عکس</span><span>فیلم</span></div></div>
+          <div class="media-slots"><a class="media-link" href="https://www.google.com/search?tbm=isch&q=Forughi%20House%20Shiraz%20%D8%AE%D8%A7%D9%86%D9%87%20%D9%81%D8%B1%D9%88%D8%BA%DB%8C%20%D8%B4%DB%8C%D8%B1%D8%A7%D8%B2" target="_blank" rel="noopener">عکس</a><a class="media-link" href="https://www.youtube.com/results?search_query=Forughi%20House%20Shiraz%20%D8%AE%D8%A7%D9%86%D9%87%20%D9%81%D8%B1%D9%88%D8%BA%DB%8C%20%D8%B4%DB%8C%D8%B1%D8%A7%D8%B2" target="_blank" rel="noopener">فیلم</a></div></div>
         <div class="body"><h3>خانه فروغی</h3><div class="meta">قاجار – اوایل پهلوی</div>
         <p>نمونه‌ای از گذار معماری خانگی شیراز از دوره قاجار به پهلوی، با ترکیب عناصر سنتی و نماهای متأثر از معماری نو.</p></div>
       </div>
@@ -295,37 +300,37 @@
     <div class="grid reveal">
       <div class="card">
         <div class="plaque p-bazaar"><div class="name">بازار وکیل</div><div class="tag">میدان شهدا تا دروازه اصفهان</div>
-          <div class="media-slots"><span>عکس</span><span>فیلم</span><span>سه‌بعدی</span></div></div>
+          <div class="media-slots"><a class="media-link" href="https://www.google.com/search?tbm=isch&q=Vakil%20Bazaar%20Shiraz%20%D8%A8%D8%A7%D8%B2%D8%A7%D8%B1%20%D9%88%DA%A9%DB%8C%D9%84%20%D8%B4%DB%8C%D8%B1%D8%A7%D8%B2" target="_blank" rel="noopener">عکس</a><a class="media-link" href="https://www.youtube.com/results?search_query=Vakil%20Bazaar%20Shiraz%20%D8%A8%D8%A7%D8%B2%D8%A7%D8%B1%20%D9%88%DA%A9%DB%8C%D9%84%20%D8%B4%DB%8C%D8%B1%D8%A7%D8%B2" target="_blank" rel="noopener">فیلم</a><a class="media-link" href="https://www.google.com/maps/search/Vakil%20Bazaar%20Shiraz%20%D8%A8%D8%A7%D8%B2%D8%A7%D8%B1%20%D9%88%DA%A9%DB%8C%D9%84%20%D8%B4%DB%8C%D8%B1%D8%A7%D8%B2%203d" target="_blank" rel="noopener">سه‌بعدی</a></div></div>
         <div class="body"><h3>بازار وکیل</h3><div class="meta">بنا: کریم‌خان زند</div>
         <p>راسته‌ای سرپوشیده با طاق‌های آجری و چهارسوق مرکزی، دربردارنده کاروانسراها، حمام وکیل و تیمچه‌های تاریخی.</p></div>
       </div>
       <div class="card">
         <div class="plaque p-mosque"><div class="name">مسجد وکیل</div><div class="tag">کنار بازار وکیل</div>
-          <div class="media-slots"><span>عکس</span><span>فیلم</span><span>سه‌بعدی</span></div></div>
+          <div class="media-slots"><a class="media-link" href="https://www.google.com/search?tbm=isch&q=Vakil%20Mosque%20Shiraz%20%D9%85%D8%B3%D8%AC%D8%AF%20%D9%88%DA%A9%DB%8C%D9%84%20%D8%B4%DB%8C%D8%B1%D8%A7%D8%B2" target="_blank" rel="noopener">عکس</a><a class="media-link" href="https://www.youtube.com/results?search_query=Vakil%20Mosque%20Shiraz%20%D9%85%D8%B3%D8%AC%D8%AF%20%D9%88%DA%A9%DB%8C%D9%84%20%D8%B4%DB%8C%D8%B1%D8%A7%D8%B2" target="_blank" rel="noopener">فیلم</a><a class="media-link" href="https://www.google.com/maps/search/Vakil%20Mosque%20Shiraz%20%D9%85%D8%B3%D8%AC%D8%AF%20%D9%88%DA%A9%DB%8C%D9%84%20%D8%B4%DB%8C%D8%B1%D8%A7%D8%B2%203d" target="_blank" rel="noopener">سه‌بعدی</a></div></div>
         <div class="body"><h3>مسجد وکیل</h3><div class="meta">دوره زندیه</div>
         <p>شبستان ستون‌دار با ستون‌های مارپیچ و کاشی‌کاری هفت‌رنگ، از شاخص‌ترین مساجد تاریخی جنوب ایران.</p></div>
       </div>
       <div class="card">
         <div class="plaque p-mosque"><div class="name">مسجد نصیرالملک</div><div class="tag">محله گودعرابان</div>
-          <div class="media-slots"><span>عکس</span><span>فیلم</span><span>سه‌بعدی</span></div></div>
+          <div class="media-slots"><a class="media-link" href="https://www.google.com/search?tbm=isch&q=Nasir-ol-Molk%20Mosque%20Pink%20Mosque%20Shiraz%20%D9%85%D8%B3%D8%AC%D8%AF%20%D9%86%D8%B5%DB%8C%D8%B1%D8%A7%D9%84%D9%85%D9%84%DA%A9%20%D8%B4%DB%8C%D8%B1%D8%A7%D8%B2" target="_blank" rel="noopener">عکس</a><a class="media-link" href="https://www.youtube.com/results?search_query=Nasir-ol-Molk%20Mosque%20Pink%20Mosque%20Shiraz%20%D9%85%D8%B3%D8%AC%D8%AF%20%D9%86%D8%B5%DB%8C%D8%B1%D8%A7%D9%84%D9%85%D9%84%DA%A9%20%D8%B4%DB%8C%D8%B1%D8%A7%D8%B2" target="_blank" rel="noopener">فیلم</a><a class="media-link" href="https://www.google.com/maps/search/Nasir-ol-Molk%20Mosque%20Pink%20Mosque%20Shiraz%20%D9%85%D8%B3%D8%AC%D8%AF%20%D9%86%D8%B5%DB%8C%D8%B1%D8%A7%D9%84%D9%85%D9%84%DA%A9%20%D8%B4%DB%8C%D8%B1%D8%A7%D8%B2%203d" target="_blank" rel="noopener">سه‌بعدی</a></div></div>
         <div class="body"><h3>مسجد نصیرالملک</h3><div class="meta">دوره قاجار</div>
         <p>معروف به «مسجد صورتی»، با پنجره‌های ارسی رنگی که در ساعات اولیه صبح نور رنگین بر کف شبستان می‌افکنند.</p></div>
       </div>
       <div class="card">
         <div class="plaque p-mosque"><div class="name">مسجد جامع عتیق</div><div class="tag">میدان شاه‌چراغ</div>
-          <div class="media-slots"><span>عکس</span><span>فیلم</span></div></div>
+          <div class="media-slots"><a class="media-link" href="https://www.google.com/search?tbm=isch&q=Atigh%20Jame%20Mosque%20Shiraz%20%D9%85%D8%B3%D8%AC%D8%AF%20%D8%AC%D8%A7%D9%85%D8%B9%20%D8%B9%D8%AA%DB%8C%D9%82%20%D8%B4%DB%8C%D8%B1%D8%A7%D8%B2" target="_blank" rel="noopener">عکس</a><a class="media-link" href="https://www.youtube.com/results?search_query=Atigh%20Jame%20Mosque%20Shiraz%20%D9%85%D8%B3%D8%AC%D8%AF%20%D8%AC%D8%A7%D9%85%D8%B9%20%D8%B9%D8%AA%DB%8C%D9%82%20%D8%B4%DB%8C%D8%B1%D8%A7%D8%B2" target="_blank" rel="noopener">فیلم</a></div></div>
         <div class="body"><h3>مسجد جامع عتیق</h3><div class="meta">بنیان کهن، بازسازی زندیه و قاجار</div>
         <p>از قدیمی‌ترین مساجد جامع ایران با بنای خدای‌خانه در میانه حیاط؛ نمونه‌ای از معماری چند لایه در طول قرون.</p></div>
       </div>
       <div class="card">
         <div class="plaque p-mosque"><div class="name">حرم شاه‌چراغ</div><div class="tag">میدان شاه‌چراغ</div>
-          <div class="media-slots"><span>عکس</span><span>فیلم</span></div></div>
+          <div class="media-slots"><a class="media-link" href="https://www.google.com/search?tbm=isch&q=Shah-e-Cheragh%20Shrine%20Shiraz%20%D8%AD%D8%B1%D9%85%20%D8%B4%D8%A7%D9%87%20%DA%86%D8%B1%D8%A7%D8%BA%20%D8%B4%DB%8C%D8%B1%D8%A7%D8%B2" target="_blank" rel="noopener">عکس</a><a class="media-link" href="https://www.youtube.com/results?search_query=Shah-e-Cheragh%20Shrine%20Shiraz%20%D8%AD%D8%B1%D9%85%20%D8%B4%D8%A7%D9%87%20%DA%86%D8%B1%D8%A7%D8%BA%20%D8%B4%DB%8C%D8%B1%D8%A7%D8%B2" target="_blank" rel="noopener">فیلم</a></div></div>
         <div class="body"><h3>حرم شاه‌چراغ</h3><div class="meta">گنبد و رواق‌های آینه‌کاری قاجار و معاصر</div>
         <p>آرامگاه احمد بن موسی، با گنبد فیروزه‌ای و صحن‌های آینه‌کاری‌شده، از مقاصد زیارتی اصلی شیراز.</p></div>
       </div>
       <div class="card">
         <div class="plaque p-bazaar"><div class="name">ارگ کریم‌خان</div><div class="tag">میدان ارگ</div>
-          <div class="media-slots"><span>عکس</span><span>فیلم</span><span>سه‌بعدی</span></div></div>
+          <div class="media-slots"><a class="media-link" href="https://www.google.com/search?tbm=isch&q=Karim%20Khan%20Citadel%20Arg%20Shiraz%20%D8%A7%D8%B1%DA%AF%20%DA%A9%D8%B1%DB%8C%D9%85%20%D8%AE%D8%A7%D9%86%20%D8%B4%DB%8C%D8%B1%D8%A7%D8%B2" target="_blank" rel="noopener">عکس</a><a class="media-link" href="https://www.youtube.com/results?search_query=Karim%20Khan%20Citadel%20Arg%20Shiraz%20%D8%A7%D8%B1%DA%AF%20%DA%A9%D8%B1%DB%8C%D9%85%20%D8%AE%D8%A7%D9%86%20%D8%B4%DB%8C%D8%B1%D8%A7%D8%B2" target="_blank" rel="noopener">فیلم</a><a class="media-link" href="https://www.google.com/maps/search/Karim%20Khan%20Citadel%20Arg%20Shiraz%20%D8%A7%D8%B1%DA%AF%20%DA%A9%D8%B1%DB%8C%D9%85%20%D8%AE%D8%A7%D9%86%20%D8%B4%DB%8C%D8%B1%D8%A7%D8%B2%203d" target="_blank" rel="noopener">سه‌بعدی</a></div></div>
         <div class="body"><h3>ارگ کریم‌خان</h3><div class="meta">دوره زندیه، ۱۱۷۹–۱۱۸۷ ه.ق</div>
         <p>ارگ نظامی-اقامتی کریم‌خان زند با چهار برج آجری در گوشه‌ها و حیاط مرکزی مرکب‌شده با درختان نارنج.</p></div>
       </div>
@@ -372,25 +377,25 @@
     <div class="grid reveal">
       <div class="card">
         <div class="plaque p-garden"><div class="name">باغ ارم</div><div class="tag">بلوار ارم</div>
-          <div class="media-slots"><span>عکس</span><span>فیلم</span><span>سه‌بعدی</span></div></div>
+          <div class="media-slots"><a class="media-link" href="https://www.google.com/search?tbm=isch&q=Eram%20Garden%20Shiraz%20%D8%A8%D8%A7%D8%BA%20%D8%A7%D8%B1%D9%85%20%D8%B4%DB%8C%D8%B1%D8%A7%D8%B2" target="_blank" rel="noopener">عکس</a><a class="media-link" href="https://www.youtube.com/results?search_query=Eram%20Garden%20Shiraz%20%D8%A8%D8%A7%D8%BA%20%D8%A7%D8%B1%D9%85%20%D8%B4%DB%8C%D8%B1%D8%A7%D8%B2" target="_blank" rel="noopener">فیلم</a><a class="media-link" href="https://www.google.com/maps/search/Eram%20Garden%20Shiraz%20%D8%A8%D8%A7%D8%BA%20%D8%A7%D8%B1%D9%85%20%D8%B4%DB%8C%D8%B1%D8%A7%D8%B2%203d" target="_blank" rel="noopener">سه‌بعدی</a></div></div>
         <div class="body"><h3>باغ ارم</h3><div class="meta">قدمت سلجوقی، عمارت قاجاری</div>
         <p>باغی با نخل‌های بلند، سرو ناز معروف و عمارت اصلی با نمای کاشی‌کاری؛ ثبت‌شده در فهرست میراث جهانی باغ‌های ایرانی.</p></div>
       </div>
       <div class="card">
         <div class="plaque p-garden"><div class="name">باغ عفیف‌آباد</div><div class="tag">بلوار عفیف‌آباد</div>
-          <div class="media-slots"><span>عکس</span><span>فیلم</span></div></div>
+          <div class="media-slots"><a class="media-link" href="https://www.google.com/search?tbm=isch&q=Afifabad%20Garden%20Shiraz%20%D8%A8%D8%A7%D8%BA%20%D8%B9%D9%81%DB%8C%D9%81%20%D8%A2%D8%A8%D8%A7%D8%AF%20%D8%B4%DB%8C%D8%B1%D8%A7%D8%B2" target="_blank" rel="noopener">عکس</a><a class="media-link" href="https://www.youtube.com/results?search_query=Afifabad%20Garden%20Shiraz%20%D8%A8%D8%A7%D8%BA%20%D8%B9%D9%81%DB%8C%D9%81%20%D8%A2%D8%A8%D8%A7%D8%AF%20%D8%B4%DB%8C%D8%B1%D8%A7%D8%B2" target="_blank" rel="noopener">فیلم</a></div></div>
         <div class="body"><h3>باغ عفیف‌آباد</h3><div class="meta">دوره قاجار – پهلوی</div>
         <p>عمارتی دو طبقه در میان باغی هندسی، در دوره پهلوی محل موزه نظامی و امروز از باغ‌موزه‌های اصلی شهر است.</p></div>
       </div>
       <div class="card">
         <div class="plaque p-garden"><div class="name">باغ دلگشا</div><div class="tag">جاده تنگ‌الله‌اکبر</div>
-          <div class="media-slots"><span>عکس</span><span>فیلم</span></div></div>
+          <div class="media-slots"><a class="media-link" href="https://www.google.com/search?tbm=isch&q=Delgosha%20Garden%20Shiraz%20%D8%A8%D8%A7%D8%BA%20%D8%AF%D9%84%DA%AF%D8%B4%D8%A7%20%D8%B4%DB%8C%D8%B1%D8%A7%D8%B2" target="_blank" rel="noopener">عکس</a><a class="media-link" href="https://www.youtube.com/results?search_query=Delgosha%20Garden%20Shiraz%20%D8%A8%D8%A7%D8%BA%20%D8%AF%D9%84%DA%AF%D8%B4%D8%A7%20%D8%B4%DB%8C%D8%B1%D8%A7%D8%B2" target="_blank" rel="noopener">فیلم</a></div></div>
         <div class="body"><h3>باغ دلگشا</h3><div class="meta">پیشینه پیش از اسلام، بازسازی متأخر</div>
         <p>یکی از کهن‌ترین باغ‌های شیراز در دامنه کوه، نزدیک آرامگاه سعدی، با ردیف درختان سرو و نارنج.</p></div>
       </div>
       <div class="card">
         <div class="plaque p-garden"><div class="name">باغ جهان‌نما</div><div class="tag">نزدیک دروازه قرآن</div>
-          <div class="media-slots"><span>عکس</span><span>فیلم</span></div></div>
+          <div class="media-slots"><a class="media-link" href="https://www.google.com/search?tbm=isch&q=Jahannama%20Garden%20Shiraz%20%D8%A8%D8%A7%D8%BA%20%D8%AC%D9%87%D8%A7%D9%86%20%D9%86%D9%85%D8%A7%20%D8%B4%DB%8C%D8%B1%D8%A7%D8%B2" target="_blank" rel="noopener">عکس</a><a class="media-link" href="https://www.youtube.com/results?search_query=Jahannama%20Garden%20Shiraz%20%D8%A8%D8%A7%D8%BA%20%D8%AC%D9%87%D8%A7%D9%86%20%D9%86%D9%85%D8%A7%20%D8%B4%DB%8C%D8%B1%D8%A7%D8%B2" target="_blank" rel="noopener">فیلم</a></div></div>
         <div class="body"><h3>باغ جهان‌نما</h3><div class="meta">دوره تیموری، بازسازی قاجار</div>
         <p>باغی تاریخی در دامنه کوه، در همسایگی دروازه قرآن، از نمونه‌های باقی‌مانده باغ‌های کهن شیراز.</p></div>
       </div>
@@ -408,13 +413,13 @@
     <div class="grid reveal" style="max-width:760px;margin:0 auto;">
       <div class="card">
         <div class="plaque p-tomb"><div class="name">حافظیه</div><div class="tag">خیابان حافظیه</div>
-          <div class="media-slots"><span>عکس</span><span>فیلم</span><span>سه‌بعدی</span></div></div>
+          <div class="media-slots"><a class="media-link" href="https://www.google.com/search?tbm=isch&q=Tomb%20of%20Hafez%20Hafezieh%20Shiraz%20%D8%A2%D8%B1%D8%A7%D9%85%DA%AF%D8%A7%D9%87%20%D8%AD%D8%A7%D9%81%D8%B8%20%D8%B4%DB%8C%D8%B1%D8%A7%D8%B2" target="_blank" rel="noopener">عکس</a><a class="media-link" href="https://www.youtube.com/results?search_query=Tomb%20of%20Hafez%20Hafezieh%20Shiraz%20%D8%A2%D8%B1%D8%A7%D9%85%DA%AF%D8%A7%D9%87%20%D8%AD%D8%A7%D9%81%D8%B8%20%D8%B4%DB%8C%D8%B1%D8%A7%D8%B2" target="_blank" rel="noopener">فیلم</a><a class="media-link" href="https://www.google.com/maps/search/Tomb%20of%20Hafez%20Hafezieh%20Shiraz%20%D8%A2%D8%B1%D8%A7%D9%85%DA%AF%D8%A7%D9%87%20%D8%AD%D8%A7%D9%81%D8%B8%20%D8%B4%DB%8C%D8%B1%D8%A7%D8%B2%203d" target="_blank" rel="noopener">سه‌بعدی</a></div></div>
         <div class="body"><h3>آرامگاه حافظ</h3><div class="meta">بازسازی دوره پهلوی، ۱۳۱۴ خورشیدی</div>
         <p>آرامگاه خواجه شمس‌الدین حافظ در باغی با درختان سرو کهن‌سال؛ بنای کنونی با ستون‌های سنگی و گنبد مسی به سبک تخت جمشیدی طراحی شده است.</p></div>
       </div>
       <div class="card">
         <div class="plaque p-tomb"><div class="name">سعدیه</div><div class="tag">بلوار سعدی</div>
-          <div class="media-slots"><span>عکس</span><span>فیلم</span><span>سه‌بعدی</span></div></div>
+          <div class="media-slots"><a class="media-link" href="https://www.google.com/search?tbm=isch&q=Tomb%20of%20Saadi%20Saadieh%20Shiraz%20%D8%A2%D8%B1%D8%A7%D9%85%DA%AF%D8%A7%D9%87%20%D8%B3%D8%B9%D8%AF%DB%8C%20%D8%B4%DB%8C%D8%B1%D8%A7%D8%B2" target="_blank" rel="noopener">عکس</a><a class="media-link" href="https://www.youtube.com/results?search_query=Tomb%20of%20Saadi%20Saadieh%20Shiraz%20%D8%A2%D8%B1%D8%A7%D9%85%DA%AF%D8%A7%D9%87%20%D8%B3%D8%B9%D8%AF%DB%8C%20%D8%B4%DB%8C%D8%B1%D8%A7%D8%B2" target="_blank" rel="noopener">فیلم</a><a class="media-link" href="https://www.google.com/maps/search/Tomb%20of%20Saadi%20Saadieh%20Shiraz%20%D8%A2%D8%B1%D8%A7%D9%85%DA%AF%D8%A7%D9%87%20%D8%B3%D8%B9%D8%AF%DB%8C%20%D8%B4%DB%8C%D8%B1%D8%A7%D8%B2%203d" target="_blank" rel="noopener">سه‌بعدی</a></div></div>
         <div class="body"><h3>آرامگاه سعدی</h3><div class="meta">بازسازی دوره پهلوی، ۱۳۳۱ خورشیدی</div>
         <p>آرامگاه شیخ مصلح‌الدین سعدی در کنار چشمه آب و باغ مرکبات، با ایوان ستون‌دار و کاشی‌کاری آبی-فیروزه‌ای.</p></div>
       </div>
