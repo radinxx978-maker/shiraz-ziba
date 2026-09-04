@@ -531,7 +531,7 @@
     <input type="text" id="chatInput" placeholder="سوال خود را بنویسید...">
     <button id="chatSend">ارسال</button>
   </div>
-  <div class="chat-hint">پاسخ‌ها توسط هوش مصنوعی Gemini تولید می‌شود.</div>
+  <div class="chat-hint">پاسخ‌ها توسط هوش مصنوعی تولید می‌شود.</div>
 </div>
 
 <script>
@@ -589,11 +589,16 @@
       });
       const data = await res.json();
       typing.remove();
+      if(!res.ok){
+        const errMsg = data?.error?.message || JSON.stringify(data);
+        addMsg('خطای سرور (' + res.status + '): ' + errMsg, 'bot');
+        return;
+      }
       const answer = data?.choices?.[0]?.message?.content || 'متأسفانه پاسخی دریافت نشد. لطفاً دوباره تلاش کنید.';
       addMsg(answer, 'bot');
     }catch(err){
       typing.remove();
-      addMsg('خطا در اتصال به سرویس هوش مصنوعی. کلید API یا اتصال اینترنت را بررسی کنید.', 'bot');
+      addMsg('خطای شبکه: ' + err.message + ' (احتمالاً فایل به‌صورت محلی باز شده، نه از لینک گیت‌هاب‌پیجز)', 'bot');
     }finally{
       sendBtn.disabled = false;
     }
